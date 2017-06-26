@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Basic App</title>
+    <link rel="stylesheet" href="./app.css">
+</head>
+<body>
+    <input type="text" id="name" placeholder="name">
+    <input type="submit" onclick="add()">
+    <div class="list-wrap"></div>
+    <dialog id="model">
+        <span class="close" onclick="this.parentNode.close()">×</span>
+        <h1>Edit Friend </h1>
+        <div id="template">
+            <input type="text">
+            <input type="submit" value="update">        
+        </div>
+    </dialog>
+    <script async src="./app.js"></script>
+</body>
+</html>

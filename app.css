@@ -1,0 +1,47 @@
+body {
+    font-family: 'Arial';
+}
+.friend-box {
+    width: 150px;
+    float: left;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    font-family: Arial;
+    font-weight: bolder;
+}
+.friend-box > h4 {
+    padding: 5px;
+    margin: 0;
+    border-radius: 50%;
+    background: #9FA8DA;
+    color: #1A237E;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.friend-box > p {
+    display: inline-block;
+}
+.friend-box > span, .close {
+    cursor: pointer;
+    font-family: Arial;
+    font-weight: bolder;
+    padding: 0 10px;
+}
+dialog#model {
+    width: 700px;
+    padding: 20px;
+    position: absolute;
+    top: 50px;
+    border-radius: 5px;
+    border: 2px solid wheat;
+}
+small {
+    border-bottom: 2px solid;
+    cursor: pointer;
+    display: table-cell;
+}

@@ -1,0 +1,22 @@
+{
+  "name": "friendapp",
+  "version": "0.0.1",
+  "description": "vanilla js",
+  "main": "app.js",
+  "scripts": {
+    "start": "http-server -p 8080 -o"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gisumit/friendapp.git"
+  },
+  "author": "sumit ingole",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gisumit/friendapp/issues"
+  },
+  "homepage": "https://github.com/gisumit/friendapp#readme",
+  "dependencies": {
+    "http-server": "^0.10.0"
+  }
+}

@@ -8,8 +8,18 @@
     <link rel="stylesheet" href="./app.css">
 </head>
 <body>
-    <input type="text" id="name" placeholder="name">
-    <input type="submit" onclick="add()">
+    <header class="top-bar">
+        <div class="title">
+            <h1>Friend app</h1>
+        </div>
+        <div class="input-wrap">
+            <input type="text" id="name" placeholder="enter name" title="enter friend name">
+            <input type="submit" value="Add" onclick="add()">
+        </div>
+        <div class="action-wrap" onclick="reloadPage()" title="refresh page">
+            <span>↻</span>
+        </div>
+    </header>
     <div class="list-wrap"></div>
     <dialog id="model">
         <span class="close" onclick="this.parentNode.close()">×</span>

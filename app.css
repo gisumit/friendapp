@@ -1,36 +1,126 @@
 body {
     font-family: 'Arial';
+    padding: 0px;
+    margin: 0px;
+    background-color: #f2f2f1;
 }
+
+header.top-bar {
+    height: 56px;
+    background: #263238;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title {
+    margin-left: 20px;
+}
+
+.title > h1 {
+    font-size: 16px;
+    color: white;
+    font-family: 'roboto';
+    font-weight: normal;
+}
+
+.input-wrap {
+    height: 32px;
+    min-width: 670px;
+    background: #415058;
+    display: flex;
+    margin-left: -30px;
+}
+
+.input-wrap > input[type="text"] {
+    background: transparent;
+    border: none;
+    flex: auto;
+    padding-left: 20px;
+    color: white;
+}
+
+.input-wrap > input[type="submit"] {
+    background: #37474F;
+    border: none;
+    color: white;
+    padding: 0px 20px;
+    font-weight: 600;
+}
+
+input#name::placeholder {
+    color: #becce6;
+}
+
+.list-wrap {
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.action-wrap {
+    margin-right: 30px;
+    color: white;
+    font-size: 25px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 320ms ease-in-out;
+}
+
+.action-wrap:hover {
+    transform: rotate(360deg);
+    background: rgba(0, 0, 0, 0.14);
+}
+
 .friend-box {
-    width: 150px;
+    min-width: 650px;
     float: left;
-    border: 1px solid gray;
+    background: white;
     border-radius: 5px;
-    margin: 10px;
+    margin: 6px 10px;
     padding: 10px;
     font-family: Arial;
     font-weight: bolder;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -2px;
 }
+
 .friend-box > h4 {
     padding: 5px;
     margin: 0;
+    text-transform: capitalize;
     border-radius: 50%;
-    background: #9FA8DA;
-    color: #1A237E;
-    width: 40px;
-    height: 40px;
+    background: #263238;
+    color: white;
+    width: 32px;
+    height: 32px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .friend-box > p {
     display: inline-block;
+    flex: 1 auto;
+    margin-left: 15px;
 }
 .friend-box > span, .close {
     cursor: pointer;
     font-family: Arial;
     font-weight: bolder;
     padding: 0 10px;
+    order: 1;
 }
 dialog#model {
     width: 700px;
@@ -40,6 +130,11 @@ dialog#model {
     border-radius: 5px;
     border: 2px solid wheat;
 }
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.6);
+}
+
 small {
     border-bottom: 2px solid;
     cursor: pointer;
